@@ -1,11 +1,20 @@
 const express = require("express")
 const app= express()
 const cors =require("cors")
+const bodyparser=require("body-parser")
 const port= 4000
 const studentDetails={name:"ravi",age:24,gender:"male"}
 const productsDetails=require("./products")
-
-app.use(cors() )
+const mongoose=require("mongoose")
+app.use(cors())
+app.use(bodyparser.urlencoded({
+	extended:true
+}))
+app.use(bodyparser.json())
+mongoose.connect("mongodb+srv://sivaram:sivaram@cluster0.u4qb9wk.mongodb.net/?retryWrites=true&w=majority")
+	.then(()=>{
+		console.log("DataBase connected successfully")
+	})
 
 
 app.get("/",(req,res)=>{
