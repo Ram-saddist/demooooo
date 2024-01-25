@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width='device-width', initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #69be4d;
+        }
+        .container{
+            background-color: white;
+            width: 30vw;
+            text-align: center;
+            margin: 10% 0% 0% 28%;
+            padding:5%;
+            border-radius: 5px;
+            box-shadow: 0px 3px 6px rgba(0,0,0,0.8);
+        }
+        .container input{
+            padding:18px 15px ;
+            width:300px;
+            border:none;
+            background-color: rgba(128, 128, 128,0.2);
+        }
+        .container .btn{
+            background-color: #00b241;
+            width:336px;
+            padding:18px 15px ;
+            border: none;
+            color: white;
+            font-size:1.1rem;
+        }
+        .container .btn:hover{
+            cursor: pointer;
+        }
+        .container .not{
+            color:  rgba(128, 128, 128,0.6);
+        }
+        .container .register{
+            color: #00b241;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <p><input type="email" placeholder="username" /></p>
+        <p><input type="password" placeholder="password" /></p>
+        <p><button class="btn">LOGIN</button></p>
+        <div>
+            <span class="not">Not registered?</span>
+            <a class="register" href="">Create an account</a>
+        </div>
+    </div>
+</body>
+
+</html>
